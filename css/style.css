@@ -408,6 +408,7 @@ p {
 .banner .container {
     position: relative;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .banner .container .row {
@@ -443,10 +444,10 @@ p {
     border-radius: 4px;
 }
 
-.banner_text a:hover {
+/* .banner_text a:hover {
     background: transparent;
     color: #ab1629;
-}
+} */
 
 #banner_santa {
     position: absolute;
@@ -461,6 +462,12 @@ p {
     bottom: 0;
     height: auto;
     width: auto;
+}
+
+.banner-image > img {
+    object-fit: cover;
+    width:100%;
+    transform: scale(1.5);
 }
 
 
